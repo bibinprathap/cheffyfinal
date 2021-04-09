@@ -1,35 +1,22 @@
-import React from "react";
-import { useDispatch } from "react-redux";
-import FoodHeader from "../../src/components/Layouts/Header/HomeHeader";
-import { FoodFooter } from "../../src/components/Layouts/home";
-import Category from "../../src/components/Layouts/category/Category";
-import Head from "next/head";
-import { cheffApi } from '../../src/api';
+import { NewOnCheffyContent } from '../../src/components/Layouts/new-in-cheffy/';
+// import ProtectedKitchen from '../../src/components/Layouts/kitchen/ProtectedKitchen';
+import FoodHeader from '../../src/components/Layouts/Header/HomeHeader';
+import FoodFooter from "../../src/components/Layouts/home/FoodFooter";
+// import { KitchenLayout } from '../../src/components/Layouts/kitchen/KitchenLayout';
 
-function Index(props) {
-  const { categoriesArray } = props;
-  const dispatch = useDispatch();
+const NewOnCheffySection = () => {
   return (
-    <div>
-      <Head>
-        <title>
-          Cheffy - New In Cheffy
-        </title>
-      </Head>
+    <>
       <FoodHeader />
-      <Category categoriesArray={categoriesArray} dispatch={dispatch} />
+      <NewOnCheffyContent />
       <FoodFooter />
-    </div>
+    </>
   );
-}
-export const getServerSideProps = async ({ params }) => {
-  //we are  cache this api responce for 1/24 hour 
-  //in the node server for avoiding the repeated api call and improving ther performence 
-  const categories = await cheffApi.getfoodCategories();
-  return {
-    props: {
-      categoriesArray: { data: categories.data },
-    }
-  }
 };
-export default Index;
+
+
+// KitchenSection.Layout = KitchenLayout;
+// const KitchenSectionComponent = ProtectedKitchen(KitchenSection);
+// KitchenSectionComponent.Layout = KitchenLayout;
+// export default KitchenSectionComponent;
+export default NewOnCheffySection
