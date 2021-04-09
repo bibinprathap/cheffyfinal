@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+	font-family: 'Manrope', sans-serif;
+}
+
+.top-head {
+	background-image: url('/images/home-bg-1.png'), url('/images/home-bg-2.png');
+	background-size: 16%, 25%;
+	background-repeat: no-repeat;
+	background-position: 0 90%, 100% 40%;
+	background-color: #f7fcff;
+	height: 80vh;
+}
+
+.head-title {
+	font-size: 5em;
+	color: #27353e;
+	text-align: center;
+	font-weight: 700;
+}
+
+.head-tag {
+	font-size: 2em;
+	color: #657178;
+	text-align: center;
+	font-weight: 400;
+}
+
+.search-row {
+	background-color: #ffffff;
+	border: 1px solid #e8eff4;
+	border-radius: 1em;
+	box-shadow: 0 5px 8px #e3ebf0;
+}
+
+.search-location {
+	background-color: #f8f7f7;
+}
+
+input[type='text']#home-search {
+	font-size: 1.5em;
+}
+
+input::-moz-placeholder#home-search {
+	font-size: 1em;
+	color: #9a9a9a;
+}
+
+input:-ms-input-placeholder#home-search {
+	font-size: 1em;
+	color: #9a9a9a;
+}
+
+input::-webkit-input-placeholder#home-search {
+	font-size: 1em;
+	color: #9a9a9a;
+}
+
+.food-grid {
+	width: 95%;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+.other-plate-grid {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+.food-card {
+	padding: 25px 10px;
+	border-radius: 1em;
+	box-shadow: 0 15px 25px -5px #e3ebf0;
+	align-items: center;
+}
+
+.new-food-image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 40vh;
+	border-radius: 1em;
+}
+
+.other-plate-image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+}
+
+/* responsive */
+@media only screen and (max-width: 576px) and (min-width: 480px) {
+	.head-title {
+		font-size: 3em;
+	}
+	.head-tag {
+		font-size: 1em;
+	}
+	.top-head {
+		background-image: url('/images/home-bg-1.png'), url('/images/home-bg-2.png'), url('/images/home-bg-3.png'),
+			url('/images/home-bg-4.png'), url('/images/home-bg-5.png');
+		background-size: 16%, 25%, 30%, 35%, 35%;
+		background-repeat: no-repeat;
+		background-position: 0 86%, 100% 15%, 5% 10%, 45% 80%, 95% 90%;
+		height: 65vh;
+	}
+	input[type='text']#home-search {
+		font-size: 0.8em;
+	}
+	input::-moz-placeholder#home-search {
+		font-size: 0.8em;
+		color: #9a9a9a;
+	}
+	input:-ms-input-placeholder#home-search {
+		font-size: 0.8em;
+		color: #9a9a9a;
+	}
+	input::-webkit-input-placeholder#home-search {
+		font-size: 0.8em;
+		color: #9a9a9a;
+	}
+	.new-food-image {
+		height: 40vh;
+	}
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+	.head-title {
+		font-size: 3.5em;
+	}
+	.head-tag {
+		font-size: 1.3em;
+	}
+	.top-head {
+		background-image: url('/images/home-bg-1.png'), url('/images/home-bg-2.png'), url('/images/home-bg-3.png'),
+			url('/images/home-bg-4.png'), url('/images/home-bg-5.png');
+		background-size: 16%, 25%, 30%, 35%, 35%;
+		background-repeat: no-repeat;
+		background-position: 0 94%, 100% 15%, 5% 10%, 45% 85%, 95% 98%;
+		height: 65vh;
+	}
+	input[type='text']#home-search {
+		font-size: 1em;
+	}
+	input::-moz-placeholder#home-search {
+		font-size: 1em;
+		color: #9a9a9a;
+	}
+	input:-ms-input-placeholder#home-search {
+		font-size: 1em;
+		color: #9a9a9a;
+	}
+	input::-webkit-input-placeholder#home-search {
+		font-size: 1em;
+		color: #9a9a9a;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.head-title {
+		font-size: 3.5em;
+	}
+	.head-tag {
+		font-size: 1.3em;
+	}
+	.top-head {
+		background-size: 16%, 25%;
+		background-repeat: no-repeat;
+		background-position: 0 90%, 100% 10%;
+		height: 75vh;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.head-title {
+		font-size: 4em;
+	}
+	.head-tag {
+		font-size: 2em;
+	}
+	.top-head {
+		background-size: 16%, 25%;
+		background-repeat: no-repeat;
+		background-position: 0 90%, 100% 5%;
+		height: 75vh;
+	}
+}

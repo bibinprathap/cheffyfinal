@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+
+@import "./site.css";
+@import "./checkOut.module.css";
+@import "./category.css";
+@import "./common.css";
+@import "./food.css";
+@import "./food2.css";
+@import "./home.css";
+
+@tailwind utilities;
